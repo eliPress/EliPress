@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <style>
+      .container{
+          padding: 50px;
+          margin-left: 30%;
+          margin-top: 10%;
+          width: 300px;
+          height: 300px;
+          border:1px solid black;
+           
+      }
+  </style>
+  <script>
+    function init() {
+
+    }
+
+    function changeColor() {
+      id_h2.innerHTML = id_input.value;
+      id_h2.style.color = id_input.value;
+      container.style.background=id_input.value;
+    }
+  </script>
+</head>
+<body onload="init()">
+    <div class="container" id="container">
+    <h1>Enter your favorite color:</h1>
+  <h2 id="id_h2"></h2>
+  <input id="id_input" type="text" oninput="changeColor()">
+  <br>
+  <!--<button onclick="changeColor()">Change color</button>-->
+  </div>
+</body>
+
+</html>
